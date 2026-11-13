@@ -1,0 +1,1 @@
+@if(TempData["Success"] is string s){<div class="alert alert-success">@s</div>}@if(TempData["Error"] is string e){<div class="alert alert-warning">@e</div>}@if(ViewBag.Error is string err && !string.IsNullOrWhiteSpace(err)){<div class="alert alert-warning">@err</div>}

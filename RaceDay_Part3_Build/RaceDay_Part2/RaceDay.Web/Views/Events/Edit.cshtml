@@ -1,0 +1,4 @@
+@model EventVm
+@{ViewData["Title"]="Edit event";}<h1 class="fw-bold">Edit event</h1><partial name="_EventForm" model="Model"/>
+
+<div class="card card-body mt-4"><h4>Event banner image</h4><form asp-action="UploadBanner" asp-route-id="@Model.EventID" method="post" enctype="multipart/form-data"><input type="file" name="file" accept="image/png,image/jpeg,image/webp" class="form-control mb-3" required/><button class="btn btn-outline-dark">Upload banner</button></form><small class="text-secondary">The image is sent to the Part 2 API for Azure Blob Storage.</small></div>

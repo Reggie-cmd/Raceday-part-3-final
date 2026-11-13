@@ -1,0 +1,2 @@
+@model List<RaceDay.Web.Controllers.HomeController.EventCard>
+@{ViewData["Title"]="Events";}<h1 class="fw-bold">Event management</h1><a class="btn btn-warning mb-3" asp-action="Create">Create event</a><div class="list-group">@foreach(var e in Model){<div class="list-group-item d-flex justify-content-between"><span><strong>@e.EventName</strong> · @e.EventDate.ToString("dd MMM yyyy")</span><span><a asp-action="Edit" asp-route-id="@e.EventID">Edit</a> · <a asp-controller="Management" asp-action="Categories" asp-route-eventId="@e.EventID">Categories</a></span></div>}</div>

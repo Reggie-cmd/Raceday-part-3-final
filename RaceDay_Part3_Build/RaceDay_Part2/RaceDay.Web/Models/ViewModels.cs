@@ -1,0 +1,7 @@
+using System.ComponentModel.DataAnnotations;
+namespace RaceDay.Web.Models;
+public sealed class LoginVm { [Required,EmailAddress] public string Email {get;set;}=""; [Required] public string Password {get;set;}=""; }
+public sealed class RegisterVm { [Required] public string FirstName {get;set;}=""; [Required] public string LastName {get;set;}=""; [Required,EmailAddress] public string Email {get;set;}=""; [Required,MinLength(8)] public string Password {get;set;}=""; [Required] public string Role {get;set;}="Participant"; public string? OrganiserCode {get;set;} }
+public sealed class EventVm { public int EventID {get;set;} [Required] public string EventName {get;set;}=""; public string? Description {get;set;} public DateTime EventDate {get;set;}=DateTime.Today.AddDays(14); public TimeSpan StartTime {get;set;}=new(8,0,0); [Required] public string Location {get;set;}=""; [Range(0,1000)] public decimal DistanceKm {get;set;} public string EventType {get;set;}="Running"; public string Status {get;set;}="Open"; }
+public sealed class CategoryVm { [Required] public string CategoryName {get;set;}=""; public string? AgeGroup {get;set;} public decimal EntryFee {get;set;} public int? MaxParticipants {get;set;} }
+public sealed class ProfileVm { public string? PhoneNumber {get;set;} public string? Address {get;set;} public string? EmergencyContactName {get;set;} public string? EmergencyContactPhone {get;set;} }
