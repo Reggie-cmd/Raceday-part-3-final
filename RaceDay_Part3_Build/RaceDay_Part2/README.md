@@ -52,3 +52,4 @@ GitHub Actions restores and builds the full solution and runs the test project o
 
 ## Important verification status
 This is a development scaffold based on the supplied Part 2 source. It has not been compiled or executed in this environment. Run the solution locally, resolve any environment-specific issues, verify API and MVC cookie/session behaviour, test all role-specific flows, and confirm the GitHub Actions workflow passes before submission. The Part 3 UI covers the core browsing, account, organiser and participant flows; image upload requires a configured Azure account and the EF Core migration above. Review and adapt the implementation and disclose AI assistance according to the assessment instructions.
+https://youtube.com/shorts/RbWIMvwhHlw?si=yxtqcuG88LWeq1iT and https://youtube.com/shorts/yInurtL3Z2Y?si=4eYVbjWE07LHvf5U 
